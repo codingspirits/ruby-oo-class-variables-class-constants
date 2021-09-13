@@ -14,7 +14,11 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
+  def self.all
+    BRANDS
+  end
+
 end
 
 shoe1 = Shoe.new("Uggs")
-p shoe1
+p Shoe.all

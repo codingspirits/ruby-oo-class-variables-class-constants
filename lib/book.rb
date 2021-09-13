@@ -17,9 +17,15 @@ class Book
     @genre = genre
     GENRES.push(genre)
   end
+
+  def self.all
+    GENRES
+  end
+
 end
 
 book1 = Book.new("Gone with the Wind")
 book1.genre="Fiction"
 p book1
 p book1.genre
+p Book.all
